@@ -1,0 +1,36 @@
+Role: You are Manus AI, acting as both a “Debug Master” and a “Bug & Error Fixing Master” for the public GitHub repository **devbernie/thuclucso**.
+
+Context:  
+• Chainlet Name: thuc luc so TLS  
+• Chainlet ID: thuclucso_2744911976759000-1  
+• RPC Endpoint: https://thuclucso-2744911976759000-1.jsonrpc.sagarpc.io  
+• Websocket Endpoint: wss://thuclucso-2744911976759000-1.ws.sagarpc.io  
+• Block Explorer: https://thuclucso-2744911976759000-1.sagaexplorer.io  
+• Genesis Account: 0xcca6F4EA7e82941535485C2363575404C3061CD2 (Balance: 300000000 TLS)  
+• Escrow Balance: 280 PSAGA, 4 weeks operating time  
+• Fixed Gas Price: Disabled  
+• Gas Return Account: 0xcca6F4EA7e82941535485C2363575404C3061CD2  
+• Deployment Auth: Disabled  
+
+Task 1 – Debug Master:  
+Read the entire codebase under `contracts/`, `backend/`, `frontend/`, and any DevContainer or CI configs. Identify the root cause of the 404 Not Found error reported at thuclucso.vercel.app, specifically the erroneous use of Pinata’s internal “pin ID” instead of the IPFS CID. Pinpoint every location in backend and frontend where this mistake occurs. Beyond that, scan for any other runtime or integration errors (missing environment variables, incorrect imports, broken routes, CORS issues, deployment scripts, test failures, etc.) and list each one with its file path and line number.
+
+Task 2 – Bug & Error Fixing Master:  
+For every issue you have identified:  
+1. Implement a correct fix in code, ensuring that:  
+   - `backend/ipfs_service.py` and any other Pinata integration return and store **`res["IpfsHash"]`** as the canonical `cid` while saving `res["id"]` into a new field `pin_id`.  
+   - Frontend utilities and services always reference `credential.cid` (the true IPFS CID) when constructing IPFS gateway URLs.  
+   - All environment variables for Pinata (`PINATA_API_KEY`, `PINATA_API_SECRET`, `PINATA_JWT`), Saga RPC settings, and Paymaster addresses are properly loaded from `.env`, with `.env.example` updated accordingly.  
+   - Deployment scripts (`script/deploy.js`, Hardhat/Foundry) correctly target the Saga chainlet RPC endpoint and update frontend config.  
+2. Add or adjust automated tests:  
+   - A new test asserting that any saved `cid` matches a CID regex (`/^(Qm[1-9A-HJ-NP-Za-km-z]{44}|bafy[0-9a-z]{58})$/`).  
+   - A HEAD request integration test that confirms a patched CID URL returns HTTP 200 from `https://cloudflare-ipfs.com/ipfs/<CID>`.  
+   - Ensure all existing Foundry and pytest suites pass without regressions.  
+3. Validate that the Vercel deployment config (if any) is correct, ensuring the site at `thuclucso.vercel.app` builds and serves without 404s or missing assets.  
+4. Refactor any other discovered issues: CORS policy on `/verify`, React routing errors, missing dynamic imports, or code style problems flagged by ESLint/Prettier.
+
+Deliverable: A single GitHub Pull Request titled **“Rescue: Fix IPFS 404 and other critical errors for ThucLucSo TLS”** containing:  
+• A concise changelog in the PR description.  
+• All code fixes and new tests.  
+• Updated `.env.example`.  
+• Confirmation that the site on Vercel and local `pnpm dev` now works end‑to‑end: issue, revoke, and verify credentials without any 404 or runtime errors.

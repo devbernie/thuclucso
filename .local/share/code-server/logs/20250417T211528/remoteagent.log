@@ -1,0 +1,11 @@
+2025-04-17 21:15:28.170 [info] 
+
+
+
+
+2025-04-17 21:15:28.191 [info] Extension host agent started.
+2025-04-17 21:15:28.278 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+2025-04-17 21:15:28.374 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+2025-04-17 21:15:33.037 [info] [10.126.13.1][44570166][ManagementConnection] New connection established.
+2025-04-17 21:15:36.727 [info] [10.126.13.1][3889605b][ExtensionHostConnection] New connection established.
+2025-04-17 21:15:37.380 [info] [10.126.13.1][3889605b][ExtensionHostConnection] <4267> Launched Extension Host Process.

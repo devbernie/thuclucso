@@ -1,0 +1,107 @@
+2025-04-17 17:15:42.376 [info] [main] Log level: Info
+2025-04-17 17:15:42.377 [info] [main] Validating found git in: "git"
+2025-04-17 17:15:42.377 [info] [main] Using git "2.34.1" from "git"
+2025-04-17 17:15:42.377 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-04-17 17:15:42.377 [info] [Model][openRepository] Opened repository: /home/ubuntu/.nvm
+2025-04-17 17:15:42.377 [info] > git config --get commit.template [4ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [7ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git for-each-ref --format %(refname)%00%(objectname)%00%(*objectname) refs/tags [8ms]
+2025-04-17 17:15:42.377 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2025-04-17 17:15:42.377 [info] [Model][openRepository] Opened repository: /home/ubuntu/thuclucso
+2025-04-17 17:15:42.377 [info] > git config --get commit.template [3ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [5ms]
+2025-04-17 17:15:42.377 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:15:42.377 [info] [Model][doInitialScan] Initial repository scan completed - repositories (2), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-17 17:15:42.377 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-04-17 17:15:42.377 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/thuclucso/.git/refs/remotes/origin/main'
+2025-04-17 17:15:42.377 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-04-17 17:15:42.377 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-04-17 17:15:42.377 [info] > git status -z -uall [116ms]
+2025-04-17 17:15:42.377 [info] > git config --get commit.template [6ms]
+2025-04-17 17:15:42.377 [info] > git for-each-ref --format %(refname)%00%(objectname)%00%(*objectname) refs/tags [2ms]
+2025-04-17 17:15:42.377 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-04-17 17:15:42.377 [info] > git status -z -uall [49ms]
+2025-04-17 17:15:42.377 [info] > git status -z -uall [655ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse --show-toplevel [9ms]
+2025-04-17 17:15:42.377 [info] > git config --get commit.template [13ms]
+2025-04-17 17:15:42.377 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [19ms]
+2025-04-17 17:15:42.377 [info] > git check-ignore -v -z --stdin [10ms]
+2025-04-17 17:15:42.377 [info] > git check-ignore -v -z --stdin [7ms]
+2025-04-17 17:15:42.377 [info] > git config --get --local branch.main.vscode-merge-base [6ms]
+2025-04-17 17:15:42.377 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-17 17:15:42.377 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-04-17 17:15:42.377 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/thuclucso/.git/refs/remotes/origin/main'
+2025-04-17 17:15:42.377 [info] > git reflog main --grep-reflog=branch: Created from *. [34ms]
+2025-04-17 17:15:42.377 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2025-04-17 17:15:42.377 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [9ms]
+2025-04-17 17:15:42.378 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-04-17 17:15:42.381 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [5ms]
+2025-04-17 17:15:42.403 [info] > git config --add --local branch.main.vscode-merge-base origin/main [5ms]
+2025-04-17 17:15:42.412 [info] > git status -z -uall [43ms] (cancelled)
+2025-04-17 17:15:42.414 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-04-17 17:15:42.418 [info] > git config --get commit.template [6ms]
+2025-04-17 17:15:42.422 [info] > git config --get --local branch.main.vscode-merge-base [5ms]
+2025-04-17 17:15:42.428 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-04-17 17:15:42.437 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/thuclucso/.git/refs/remotes/origin/main'
+2025-04-17 17:15:42.438 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [11ms]
+2025-04-17 17:15:42.442 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2025-04-17 17:15:42.449 [info] > git merge-base refs/heads/main refs/remotes/origin/main [7ms]
+2025-04-17 17:15:42.454 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-04-17 17:15:42.460 [info] > git diff --name-status -z --diff-filter=ADMR dac7b72eceee1403caa1244809bc8c82e0035e6e...refs/remotes/origin/main [7ms]
+2025-04-17 17:15:42.966 [info] > git status -z -uall [520ms]
+2025-04-17 17:15:46.193 [info] > git check-ignore -v -z --stdin [48ms]
+2025-04-17 17:15:48.607 [info] > git check-ignore -v -z --stdin [20ms]
+2025-04-17 17:15:52.426 [info] > git show --textconv :thuclucso/PR_CHANGELOG.md [19ms]
+2025-04-17 17:15:52.428 [info] > git ls-files --stage -- thuclucso/PR_CHANGELOG.md [15ms]
+2025-04-17 17:15:52.436 [info] > git cat-file -s 1f516e92433513bec9d38e580fbb23d5c345c695 [3ms]
+2025-04-17 17:16:00.312 [info] > git check-ignore -v -z --stdin [46ms]
+2025-04-17 17:16:02.965 [info] > git check-ignore -v -z --stdin [15ms]
+2025-04-17 17:16:04.889 [info] > git check-ignore -v -z --stdin [13ms]
+2025-04-17 17:16:06.889 [info] > git show --textconv :thuclucso/frontend/src/hooks/useIssuerDashboard.ts [10ms]
+2025-04-17 17:16:06.893 [info] > git ls-files --stage -- thuclucso/frontend/src/hooks/useIssuerDashboard.ts [10ms]
+2025-04-17 17:16:06.899 [info] > git cat-file -s 5d8c5ea57446372148285d6eecc218d11d174ec4 [3ms]
+2025-04-17 17:16:37.087 [info] > git check-ignore -v -z --stdin [15ms]
+2025-04-17 17:16:39.033 [info] > git check-ignore -v -z --stdin [13ms]
+2025-04-17 17:16:55.211 [info] > git rev-parse --show-toplevel [6ms]
+2025-04-17 17:16:55.211 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-17 17:19:54.060 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-17 17:19:54.065 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-04-17 17:19:54.071 [info] [Model][openRepository] Opened repository: /home/ubuntu
+2025-04-17 17:19:54.079 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-17 17:19:54.081 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-04-17 17:19:54.081 [warning] [Git][getBranch] No such branch: master
+2025-04-17 17:19:54.082 [info] > git config --get commit.template [6ms]
+2025-04-17 17:19:54.092 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-04-17 17:19:54.374 [info] > git status -z -uall [288ms] (cancelled)
+2025-04-17 17:19:56.090 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1723ms]
+2025-04-17 17:19:56.090 [warning] [Git][getBranch] No such branch: master
+2025-04-17 17:19:56.091 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-04-17 17:19:56.103 [info] > git config --get commit.template [17ms]
+2025-04-17 17:19:56.112 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-17 17:19:56.115 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-04-17 17:19:56.116 [warning] [Git][getBranch] No such branch: master
+2025-04-17 17:19:56.141 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-04-17 17:19:56.326 [info] > git status -z -uall [203ms] (cancelled)
+2025-04-17 17:19:58.121 [info] > git check-ignore -v -z --stdin [20ms]
+2025-04-17 17:19:58.127 [info] > git check-ignore -v -z --stdin [32ms]
